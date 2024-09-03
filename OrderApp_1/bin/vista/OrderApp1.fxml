@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderApp1Controller">
+   <children>
+      <Pane prefHeight="860.0" prefWidth="1248.0">
+         <children>
+            <TextField fx:id="textfield_name" layoutX="61.0" layoutY="163.0" prefHeight="46.0" prefWidth="388.0" promptText="Name of the product" />
+            <Button fx:id="button_add" layoutX="486.0" layoutY="691.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="ADD" />
+            <ListView fx:id="listView" fixedCellSize="-60.0" layoutX="61.0" layoutY="234.0" prefHeight="580.0" prefWidth="388.0" />
+            <Button fx:id="button_remove" layoutX="569.0" layoutY="691.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="REMOVE" />
+            <Button fx:id="button_update" layoutX="471.0" layoutY="751.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="184.0" text="UPDATE DATABASE" />
+            <TextField fx:id="textfield_price" layoutX="486.0" layoutY="163.0" prefHeight="46.0" prefWidth="106.0" promptText="Price" />
+            <ChoiceBox fx:id="choiceBox" layoutX="618.0" layoutY="163.0" prefHeight="46.0" prefWidth="150.0" />
+            <TextArea fx:id="textArea_desc" layoutX="474.0" layoutY="290.0" prefHeight="243.0" prefWidth="296.0" />
+            <Text fill="#575656" layoutX="61.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="105.99999999999989">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#575656" layoutX="486.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" wrappingWidth="105.99999999999989">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#575656" layoutX="618.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="105.99999999999989">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#575656" layoutX="474.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="177.9999999999999">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#575656" layoutX="474.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Options" wrappingWidth="177.9999999999999">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#aeaeae" height="762.0" layoutX="799.0" layoutY="52.0" stroke="TRANSPARENT" strokeType="INSIDE" width="11.0" />
+            <Text layoutX="255.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a product" wrappingWidth="177.99999999999977">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="930.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a type" wrappingWidth="177.99999999999977">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="textfield_type" layoutX="839.0" layoutY="163.0" prefHeight="46.0" prefWidth="158.0" promptText="Name of the type" />
+            <Button fx:id="button_addType" layoutX="1019.0" layoutY="163.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="ADD" />
+            <Text fill="#575656" layoutX="839.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="105.99999999999989">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+            <ListView fx:id="tablesList" fixedCellSize="-60.0" layoutX="1021.0" layoutY="289.0" prefHeight="471.0" prefWidth="158.0" />
+            <Button fx:id="button_addTable" layoutX="892.0" layoutY="308.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="+" />
+            <Button fx:id="button_removeTable" layoutX="892.0" layoutY="366.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="-" />
+            <Button fx:id="button_removeType" layoutX="1100.0" layoutY="163.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="REMOVE" />
+            <Text fill="#575656" layoutX="839.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tables Management" wrappingWidth="255.9999999999999">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+         </children></Pane>
+   </children>
+</AnchorPane>

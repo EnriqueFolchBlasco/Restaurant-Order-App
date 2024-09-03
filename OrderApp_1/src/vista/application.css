@@ -1,0 +1,9 @@
+.list-cell {
+    -fx-border-color: #ccc; /* Color of the border lines */
+    -fx-border-width: 0 0 1 0; /* Line only at the bottom of each cell */
+}
+
+.list-cell:last-child {
+    -fx-border-width: 0; /* No border for the last cell */
+}
+
