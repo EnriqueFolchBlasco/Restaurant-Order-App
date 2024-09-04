@@ -3,11 +3,11 @@ package models;
 public class Product {
 
 	String name;
-	double price;
+	String price;
 	String type;
 	String description;
 	
-	public Product(String name, double price, String type, String description) {
+	public Product(String name, String price, String type, String description) {
 		super();
 		this.name = name;
 		this.price = price;
@@ -23,11 +23,11 @@ public class Product {
 		this.name = name;
 	}
 
-	public double getPrice() {
+	public String getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 
@@ -45,6 +45,11 @@ public class Product {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [name=" + name + ", price=" + price + ", type=" + type + ", description=" + description + "]";
 	}
 	
 	

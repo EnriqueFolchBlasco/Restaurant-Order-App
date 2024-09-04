@@ -16,10 +16,10 @@
       <Pane prefHeight="860.0" prefWidth="1248.0">
          <children>
             <TextField fx:id="textfield_name" layoutX="61.0" layoutY="163.0" prefHeight="46.0" prefWidth="388.0" promptText="Name of the product" />
-            <Button fx:id="button_add" layoutX="486.0" layoutY="691.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="ADD" />
+            <Button fx:id="button_add" layoutX="474.0" layoutY="750.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="ADD" />
             <ListView fx:id="listView" fixedCellSize="-60.0" layoutX="61.0" layoutY="234.0" prefHeight="580.0" prefWidth="388.0" />
-            <Button fx:id="button_remove" layoutX="569.0" layoutY="691.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="REMOVE" />
-            <Button fx:id="button_update" layoutX="471.0" layoutY="751.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="184.0" text="UPDATE DATABASE" />
+            <Button fx:id="button_remove" layoutX="557.0" layoutY="750.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="REMOVE" />
+            <Button fx:id="button_update" layoutX="652.0" layoutY="750.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="121.0" text="UPDATE DATABASE" />
             <TextField fx:id="textfield_price" layoutX="486.0" layoutY="163.0" prefHeight="46.0" prefWidth="106.0" promptText="Price" />
             <ChoiceBox fx:id="choiceBox" layoutX="618.0" layoutY="163.0" prefHeight="46.0" prefWidth="150.0" />
             <TextArea fx:id="textArea_desc" layoutX="474.0" layoutY="290.0" prefHeight="243.0" prefWidth="296.0" />
@@ -43,7 +43,7 @@
                   <Font name="Consolas Bold" size="24.0" />
                </font>
             </Text>
-            <Text fill="#575656" layoutX="474.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Options" wrappingWidth="177.9999999999999">
+            <Text fill="#575656" layoutX="474.0" layoutY="727.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Options" wrappingWidth="177.9999999999999">
                <font>
                   <Font name="Consolas Bold" size="24.0" />
                </font>
@@ -71,6 +71,12 @@
             <Button fx:id="button_removeTable" layoutX="892.0" layoutY="366.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="-" />
             <Button fx:id="button_removeType" layoutX="1100.0" layoutY="163.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="72.0" text="REMOVE" />
             <Text fill="#575656" layoutX="839.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tables Management" wrappingWidth="255.9999999999999">
+               <font>
+                  <Font name="Consolas Bold" size="24.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="warnings_textArea" editable="false" layoutX="474.0" layoutY="591.0" prefHeight="108.0" prefWidth="296.0" />
+            <Text fill="#575656" layoutX="474.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warnings" wrappingWidth="177.9999999999999">
                <font>
                   <Font name="Consolas Bold" size="24.0" />
                </font>
