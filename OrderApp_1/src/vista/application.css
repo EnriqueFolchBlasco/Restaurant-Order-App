@@ -1,9 +1,142 @@
-.list-cell {
-    -fx-border-color: #ccc; /* Color of the border lines */
-    -fx-border-width: 0 0 1 0; /* Line only at the bottom of each cell */
+AnchorPane {
+    -fx-background-color: linear-gradient(to bottom, #e0eafc, #cfdef3);
+    -fx-padding: 20px;
 }
 
-.list-cell:last-child {
-    -fx-border-width: 0; /* No border for the last cell */
+Pane {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-padding: 20px;
+    -fx-border-color: white;
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-border-insets: 10px;
 }
 
+TextField, TextArea {
+    -fx-background-color: #f0f8ff;
+    -fx-border-color: #2980b9;
+    -fx-border-radius: 5px;
+    -fx-padding: 0;
+    -fx-font-size: 14px;
+    -fx-alignment: center-left;
+}
+
+TextField .text, TextArea .text {
+    -fx-alignment: center-left;
+    -fx-padding: 3 5 3 5;
+}
+
+TextField:focused, TextArea:focused {
+    -fx-border-color: #1abc9c;
+    -fx-border-width: 2px;
+}
+
+TextField {
+    -fx-padding: 5px 10px;
+}
+
+TextField:empty .text {
+    -fx-padding: 0 10 0 10;
+}
+
+ChoiceBox {
+    -fx-background-color: #f0f8ff;
+    -fx-border-color: #2980b9;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+Button {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+
+    -fx-border-width: 2px;
+}
+
+Button:hover {
+    -fx-background-color: #3498db;
+}
+
+Button:pressed {
+    -fx-background-color: #1abc9c;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 5, 0.5, 0, 2);
+}
+
+Button#add, Button#remove, Button#update-item {
+    -fx-padding: 12px;
+    -fx-border-radius: 8px;
+    -fx-min-width: 100px;
+}
+
+Button#add:hover, Button#remove:hover {
+    -fx-background-color: #2ecc71;
+}
+
+Button#remove {
+    -fx-background-color: #c0392b;
+}
+
+Button#remove:hover {
+    -fx-background-color: #e74c3c;
+}
+
+Separator {
+    -fx-background-color: #bdc3c7;
+    -fx-padding: 5px;
+    -fx-border-radius: 3px;
+}
+
+ListView {
+    -fx-background-color: #f0f8ff;
+    -fx-border-color: #2980b9;
+    -fx-border-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 18px;
+}
+
+#typesList {
+    -fx-font-size: 15px;
+}
+
+
+.list-cell:focused:hover {
+    -fx-background-color: #1abc9c; 
+    -fx-text-fill: white; 
+}
+
+Text {
+    -fx-font-size: 16px;
+    -fx-fill: #2c3e50;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-weight: bold;
+}
+
+Text#warnings {
+    -fx-font-size: 14px;
+    -fx-fill: red;
+    -fx-font-weight: bold;
+}
+
+Text#tables-management {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-fill: #34495e;
+}
+/*
+Rectangle {
+    -fx-fill: transparent;
+    -fx-stroke: #2c3e50;
+    -fx-stroke-width: 2;
+    -fx-arc-width: 8;
+    -fx-arc-height: 8;
+}
+*/
+#warnings_textArea {
+    -fx-text-fill: red;  
+    -fx-font-weight: bold; 
+}
